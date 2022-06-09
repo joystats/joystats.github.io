@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.ico">
 <title>สอนเขียนโปรแกรมฟรี ผ่าน Zoom</title>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -11,11 +12,17 @@
 	body{background-color:#f4f5f7;font-family: 'Sarabun', sans-serif;}
 	.contrainer{background:#f4f5f7;}
 	.contrainer .col-md-6{padding:48px;background:#ffffff;}
-	.item{margin:24px 0;padding:24px 0;border-top:1px solid #e2e8f0;padding-bottom:0px;}
+	h1{margin-bottom:16px;}
+	.item{margin:24px 0;padding-bottom:0px;}/*border-top:1px solid #e2e8f0;*/
 	.item:first-of-type{margin-top:8px;}
 	.item div.box {padding-left:8px;}
 	.item h3{margin-bottom:24px;}
 	div.topic{margin-top:56px;}
+	.section-stack{margin-top:48px;}
+	.flex-center{display:flex; flex-direction:column;align-items:center;margin-bottom:24px;margin-top:24px;}
+	.register{margin-top:40px;}
+	.topic h3{margin-bottom:0px;border-top:1px solid #e2e8f0;padding-top:48px;}
+	.section-footer{margin-top:56px;}
 </style>
 </head>
 <body>
@@ -23,9 +30,45 @@
 	<div class="col-md-6 offset-md-3">
 		<div class="row">
 			<h1>สอนเขียนโปรแกรมฟรี ผ่าน Zoom</h1>
-			<h3>คอร์สถัดไป <mark>ReactJs Developer</mark> <small class="text-muted">วันเสาร์ ที่ 18/06/2565 เวลา 09:00 - 12:00 น.</div></h3>
+			<h3>คอร์สถัดไป <mark>ReactJs Developer</mark> <small class="text-muted">วันเสาร์ ที่ 18/06/2565 เวลา 09:00 - 12:00 น.</small></h3>
+				
+			<div class="register">
+				<h3>ลงทะเบียนเรียนฟรี</h3>
+				<p>ภายในวันศุกร์ ที่ 17/06/2565 เวลา 17:00 น. <small class="text-muted">(ขอยกเลิกการสอนในรอบที่จำนวนลงทะเบียนไม่ถึง 5 คน )</small></p>	
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" placeholder>
+					<label>ชื่อ</label>
+				</div>
+				
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" placeholder>
+					<label>เบอร์โทร</label>
+				</div>
+				
+				<div class="form-floating mb-3">
+					<input type="text" class="form-control" placeholder>
+					<label>อีเมล์</label>
+				</div>
+				<div>
+					<button type="button" class="btn btn-primary">ลงทะเบียนเรียนฟรี</button>
+				</div>
+			</div>
 			
-			<p>ลงทะเบียนเรียนภายในวันศุกร์ ที่ 17/06/2565 เวลา 17:00 น. <small class="text-muted">(ขอยกเลิกการสอนในรอบที่จำนวนลงทะเบียนไม่ถึง 5 คน )</small></p>
+			<div class="topic">
+				<h3>คอร์สที่สอนเหมาะกับใครบ้าง</h3>
+			</div>
+			
+			<div class="item">
+				<p>ไม่จำเป็นต้องมีพื้นฐานมาก่อน เพราะเราสอนละเอียดตั้งแต่เริ่มต้น coding ทีละตัวอักษร</p>
+				<div class="box">
+					<ul>
+						<li>นักเรียน นักศึกษาที่อยากเป็นโปรแกรมเมอร์</li>
+						<li>ไม่จำเป็นต้องมีพื้นฐาน เพราะสอนตั้งแต่เริ่มต้น</li>
+						<li>Developer หรือ Programmer ที่อยากพัฒนาตัวเอง</li>
+					</ul>
+				</div>
+			</div>
+
 			
 			<div class="topic">
 				<h3>คอร์สที่สอนมีอะไรบ้าง</h3>
@@ -93,31 +136,48 @@
 					</ul>
 				</div>
 			</div>
-			
-			<div class="item">
-				<h3>ลงทะเบียนเรียน</h3>
-
-					<div class="form-floating mb-3">
-						<input type="text" class="form-control" placeholder>
-						<label>ชื่อ</label>
-					</div>
-					
-					<div class="form-floating mb-3">
-						<input type="text" class="form-control" placeholder>
-						<label>เบอร์โทร</label>
-					</div>
-					
-					<div class="form-floating mb-3">
-						<input type="text" class="form-control" placeholder>
-						<label>อีเมล์</label>
-					</div>
-					<div>
-						<button type="button" class="btn btn-primary">ลงทะเบียนเรียน</button>
-					</div>
-
-			</div>
-			
 		</div>
+		
+		<div class="topic">
+			<h3>พัฒนาด้วยเครื่องมืออะไรบ้าง</h3>
+		</div>
+		 <div class="row section-stack">
+			<div class="col-md-4 flex-center">
+				<img src="./images/html.png">
+				<h4>HTML5</h4>
+			</div>
+			<div class="col-md-4 flex-center">
+				<img src="./images/javascript.png">
+				<h4>Javascript</h4>
+			</div>
+			<div class="col-md-4 flex-center">
+				<img src="./images/reactjs.png">
+				<h4>ReactJs</h4>
+			</div>
+			<div class="col-md-4 flex-center">
+				<img src="./images/nodejs.png">
+				<h4>NodeJs</h4>
+			</div>
+			<div class="col-md-4 flex-center">
+				<img src="./images/sql.png">
+				<h4>Microsoft SQL</h4>
+			</div>
+			<div class="col-md-4 flex-center">
+				<img src="./images/mysql.png">
+				<h4>Mysql</h4>
+			</div>
+		</div>
+		
+		<div class="section-footer">
+			<h5>รู้จักผู้สอน</h5>
+			<p>
+			ปัจจุบันทำงานประจำ เป็นโปรแกรมเมอร์มามากกว่า 10 ปี<br/>
+			สอนจากประสบการณ์การทำงานจริง เจอ bug เจอปัญหามามากมาย จึงอยากแชร์ความรู้เพื่อให้เกิดโปรแกรมเมอร์หน้าใหม่เพิ่มมากขึ้น ตลาดยังต้องการโปรแกรมเมอร์อีกเยอะ
+			จากที่เคยสอนมาพบว่า ไม่จำเป็นต้องจบตรงสาย ขอแค่มีความอยาก ตั้งใจและใฝ่รู้ ทุกคนก็สามารถเก่งและทำอาชีพโปรแกรมเมอร์ได้ โดยเฉพาะถ้ามีคนช่วยไกด์ให้ก็ยิ่งไปได้เร็ว<br/>
+			ขอเป็นกำลังใจให้กับว่าที่โปรแกรมเมอร์คนใหม่ทุกคนครับ
+			</p>
+		</div>
+		
 	</div>
 </div>
 </body>
