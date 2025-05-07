@@ -21,5 +21,7 @@ div.topic{margin-top:56px;}
 .box-register{margin-top:16px;}
 
 @media only screen and (max-width: 768px){
+	body{font-size: 12px;}
+	h1, h2, h3, h4, h5, h6{font-size: 14px;}
 	.col-md-12{max-width:90% !important; margin: 0 auto !important;margin-top: 16px !important;padding-top: 16px !important;}
 }
